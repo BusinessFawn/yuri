@@ -35,6 +35,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		154185DCEA8AE8AB77413EF9 /* Pods-yuri.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yuri.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yuri/Pods-yuri.debug.xcconfig"; sourceTree = "<group>"; };
+		2880E5D0600525848C70429A /* Pods-yuriTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yuriTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-yuriTests/Pods-yuriTests.release.xcconfig"; sourceTree = "<group>"; };
+		44107661DFC0A43CB3350596 /* Pods-yuri.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yuri.release.xcconfig"; path = "Pods/Target Support Files/Pods-yuri/Pods-yuri.release.xcconfig"; sourceTree = "<group>"; };
+		4BDBD1FD17D89A2FED7112D2 /* Pods-yuriTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yuriTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yuriTests/Pods-yuriTests.debug.xcconfig"; sourceTree = "<group>"; };
+		76330B9E8FB71FFB10363D2D /* Pods-yuriUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yuriUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yuriUITests/Pods-yuriUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A92BB4B8FE84D77F1B46DDFA /* Pods-yuriUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yuriUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-yuriUITests/Pods-yuriUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BFF704701ED0DDCA00E1BAF3 /* yuri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yuri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFF704731ED0DDCA00E1BAF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFF704751ED0DDCA00E1BAF3 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +82,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13D206849CADE9A378F7254A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				154185DCEA8AE8AB77413EF9 /* Pods-yuri.debug.xcconfig */,
+				44107661DFC0A43CB3350596 /* Pods-yuri.release.xcconfig */,
+				4BDBD1FD17D89A2FED7112D2 /* Pods-yuriTests.debug.xcconfig */,
+				2880E5D0600525848C70429A /* Pods-yuriTests.release.xcconfig */,
+				76330B9E8FB71FFB10363D2D /* Pods-yuriUITests.debug.xcconfig */,
+				A92BB4B8FE84D77F1B46DDFA /* Pods-yuriUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		484117330883F25C541623C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BFF704671ED0DDCA00E1BAF3 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +109,8 @@
 				BFF704891ED0DDCA00E1BAF3 /* yuriTests */,
 				BFF704941ED0DDCA00E1BAF3 /* yuriUITests */,
 				BFF704711ED0DDCA00E1BAF3 /* Products */,
+				13D206849CADE9A378F7254A /* Pods */,
+				484117330883F25C541623C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFF7049A1ED0DDCA00E1BAF3 /* Build configuration list for PBXNativeTarget "yuri" */;
 			buildPhases = (
+				397D9D680BA10E31BF854999 /* [CP] Check Pods Manifest.lock */,
 				BFF7046C1ED0DDCA00E1BAF3 /* Sources */,
 				BFF7046D1ED0DDCA00E1BAF3 /* Frameworks */,
 				BFF7046E1ED0DDCA00E1BAF3 /* Resources */,
+				126C42826A765B385E36503B /* [CP] Embed Pods Frameworks */,
+				7532F728BB6FDD3C5D2E9D81 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +183,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFF7049D1ED0DDCA00E1BAF3 /* Build configuration list for PBXNativeTarget "yuriTests" */;
 			buildPhases = (
+				8A12A3AB73806BD833C720EC /* [CP] Check Pods Manifest.lock */,
 				BFF704821ED0DDCA00E1BAF3 /* Sources */,
 				BFF704831ED0DDCA00E1BAF3 /* Frameworks */,
 				BFF704841ED0DDCA00E1BAF3 /* Resources */,
+				9A1523745F0A57D646A253CA /* [CP] Embed Pods Frameworks */,
+				953C9550263E0E72956BE62E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +204,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFF704A01ED0DDCA00E1BAF3 /* Build configuration list for PBXNativeTarget "yuriUITests" */;
 			buildPhases = (
+				FA33CBE5AC2CB54175B72B81 /* [CP] Check Pods Manifest.lock */,
 				BFF7048D1ED0DDCA00E1BAF3 /* Sources */,
 				BFF7048E1ED0DDCA00E1BAF3 /* Frameworks */,
 				BFF7048F1ED0DDCA00E1BAF3 /* Resources */,
+				5C4B362027E68DF3205172D9 /* [CP] Embed Pods Frameworks */,
+				14BB44426BDD2B44E29EDAC9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,6 +233,7 @@
 				TargetAttributes = {
 					BFF7046F1ED0DDCA00E1BAF3 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = RG3ACPP788;
 						ProvisioningStyle = Automatic;
 					};
 					BFF704851ED0DDCA00E1BAF3 = {
@@ -256,6 +294,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		126C42826A765B385E36503B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yuri/Pods-yuri-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		14BB44426BDD2B44E29EDAC9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yuriUITests/Pods-yuriUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		397D9D680BA10E31BF854999 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5C4B362027E68DF3205172D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yuriUITests/Pods-yuriUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7532F728BB6FDD3C5D2E9D81 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yuri/Pods-yuri-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A12A3AB73806BD833C720EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		953C9550263E0E72956BE62E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yuriTests/Pods-yuriTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A1523745F0A57D646A253CA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yuriTests/Pods-yuriTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA33CBE5AC2CB54175B72B81 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BFF7046C1ED0DDCA00E1BAF3 /* Sources */ = {
@@ -414,8 +590,10 @@
 		};
 		BFF7049B1ED0DDCA00E1BAF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 154185DCEA8AE8AB77413EF9 /* Pods-yuri.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RG3ACPP788;
 				INFOPLIST_FILE = yuri/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.4tay.yuri;
@@ -426,8 +604,10 @@
 		};
 		BFF7049C1ED0DDCA00E1BAF3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44107661DFC0A43CB3350596 /* Pods-yuri.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RG3ACPP788;
 				INFOPLIST_FILE = yuri/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.4tay.yuri;
@@ -438,6 +618,7 @@
 		};
 		BFF7049E1ED0DDCA00E1BAF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BDBD1FD17D89A2FED7112D2 /* Pods-yuriTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -452,6 +633,7 @@
 		};
 		BFF7049F1ED0DDCA00E1BAF3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2880E5D0600525848C70429A /* Pods-yuriTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -466,6 +648,7 @@
 		};
 		BFF704A11ED0DDCA00E1BAF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76330B9E8FB71FFB10363D2D /* Pods-yuriUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = yuriUITests/Info.plist;
@@ -479,6 +662,7 @@
 		};
 		BFF704A21ED0DDCA00E1BAF3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A92BB4B8FE84D77F1B46DDFA /* Pods-yuriUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = yuriUITests/Info.plist;
@@ -509,6 +693,7 @@
 				BFF7049C1ED0DDCA00E1BAF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BFF7049D1ED0DDCA00E1BAF3 /* Build configuration list for PBXNativeTarget "yuriTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +702,7 @@
 				BFF7049F1ED0DDCA00E1BAF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BFF704A01ED0DDCA00E1BAF3 /* Build configuration list for PBXNativeTarget "yuriUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +711,7 @@
 				BFF704A21ED0DDCA00E1BAF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
