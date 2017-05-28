@@ -1,0 +1,768 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		058E1BC6FD54689067D18304BF034818 /* Pods-yuriTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8F2C50B72C6DC8CA9489EEDB888785 /* Pods-yuriTests-dummy.m */; };
+		1F322FFA46FB5D7C91B580BAE25BECA4 /* Pods-yuriUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F5D26FD3A4F547B8BECC43C74D36BDA0 /* Pods-yuriUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F9CE1E86D19BE17DC1DB5CA52ED8BD0 /* Pods-yuriTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E38ABE400A67F7C523A32FB311F3B0C /* Pods-yuriTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		320144C1D79B1442E4702AE52BD04FBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		65C3FBFF59B2130D4F5AF832FAC3DCD2 /* Pods-yuriUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A8AC7B70C3A233740F1D585F41E4AF /* Pods-yuriUITests-dummy.m */; };
+		84E23FC7A6C971A81A17AE237C5C9281 /* Pods-yuri-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 75D2C3C0C87B77B9AF1F106301DDEE63 /* Pods-yuri-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2DB7F1BF0CF813EAE911B0111497ACB /* Pods-yuri-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E556CA86187C08610E9B4ADD7A2D7BB /* Pods-yuri-dummy.m */; };
+		DCB630E5AABAE404DEC0AA7A5316EFAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		FC4FAC089E727E071300DA1073666C8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08F1229163C7F5E61C7C4B361510F11C /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		0C915ECECE427DE700BC05F531D9953B /* Pods-yuriTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-yuriTests.debug.xcconfig"; sourceTree = "<group>"; };
+		10171B513ED1B5AD3108F3B60189F851 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11CA587AA40D80DFE5D1F8F02EA8E046 /* Pods-yuri-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-yuri-acknowledgements.plist"; sourceTree = "<group>"; };
+		15352B0CD18A4A30D5DF2E53BBF29195 /* Pods-yuriUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-yuriUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1ABAB6B0FF4CF748335102A9174911BF /* Pods-yuri-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-yuri-frameworks.sh"; sourceTree = "<group>"; };
+		23E26FD15527BA14449E1BBAC47291A8 /* Pods-yuriUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-yuriUITests-frameworks.sh"; sourceTree = "<group>"; };
+		28A5BB949E9394120723A477B2E0D423 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29A8AC7B70C3A233740F1D585F41E4AF /* Pods-yuriUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-yuriUITests-dummy.m"; sourceTree = "<group>"; };
+		2D131E5C6DD06F562D539A83E3DEAF49 /* Pods_yuriUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_yuriUITests.framework; path = "Pods-yuriUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FD54A11E9BE275892565CB5DCE1C4E9 /* Pods-yuriTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-yuriTests-resources.sh"; sourceTree = "<group>"; };
+		4164F076B3D92F212B81D6FAA2AAC3E3 /* Pods-yuriTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-yuriTests-frameworks.sh"; sourceTree = "<group>"; };
+		4E19C81355D034CB4257C9F2649AC366 /* Pods-yuriUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-yuriUITests.release.xcconfig"; sourceTree = "<group>"; };
+		57D4F5C8EB1CF0FC671F83A81CFFCE0A /* Pods-yuriUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-yuriUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		58E71BF18EF41A061C6F7B41916066E8 /* Pods-yuriTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-yuriTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5D716922A0205D80D07FD888A64EB4FA /* Pods-yuri.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-yuri.release.xcconfig"; sourceTree = "<group>"; };
+		62360904AAC80B8727AF4841876A5025 /* Pods-yuriUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-yuriUITests.modulemap"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		67F9F93FD1271FFB52B60130D3E1F5E1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E556CA86187C08610E9B4ADD7A2D7BB /* Pods-yuri-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-yuri-dummy.m"; sourceTree = "<group>"; };
+		70324FDF1FBB41BEA92DE76E00BD3E96 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
+		74A6A255393D8206D8AA000263C1BA52 /* Pods_yuriTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_yuriTests.framework; path = "Pods-yuriTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75D2C3C0C87B77B9AF1F106301DDEE63 /* Pods-yuri-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-yuri-umbrella.h"; sourceTree = "<group>"; };
+		7E38ABE400A67F7C523A32FB311F3B0C /* Pods-yuriTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-yuriTests-umbrella.h"; sourceTree = "<group>"; };
+		8EF4CB6DF7716A6DB21E1726EF76587B /* Pods-yuriTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-yuriTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96E1DA34B525C4873039B1EAD8091B23 /* Pods-yuriUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-yuriUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9CA3267AE51CAEAB019C4F4BE0AAEEE2 /* Pods-yuriTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-yuriTests.release.xcconfig"; sourceTree = "<group>"; };
+		A23817746C0B413C61592FA806945799 /* Pods-yuriTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-yuriTests.modulemap"; sourceTree = "<group>"; };
+		A92DFDA40F47C0FD221B2872C31099A1 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		AFD4D1E144CCB4285706E577C2602A44 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		B22C69ADCE7C9D529F11B17B4EF5E065 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		B2D601D3100627BC13481E031E0D59F1 /* Pods_yuri.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_yuri.framework; path = "Pods-yuri.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B558D9F344F70899C603873F96825CDA /* Pods-yuri.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-yuri.modulemap"; sourceTree = "<group>"; };
+		D0F9D2F250B76840309D947E06652B41 /* Pods-yuriUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-yuriUITests-resources.sh"; sourceTree = "<group>"; };
+		D96DB78B1F07E134DD417E373FBB6F8A /* Pods-yuri-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-yuri-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E9B17CC60261BAAEFF35297E7985E237 /* Pods-yuri.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-yuri.debug.xcconfig"; sourceTree = "<group>"; };
+		EB8F2C50B72C6DC8CA9489EEDB888785 /* Pods-yuriTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-yuriTests-dummy.m"; sourceTree = "<group>"; };
+		F3152683484FC332925D3D8189E183FA /* Pods-yuri-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-yuri-resources.sh"; sourceTree = "<group>"; };
+		F5D26FD3A4F547B8BECC43C74D36BDA0 /* Pods-yuriUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-yuriUITests-umbrella.h"; sourceTree = "<group>"; };
+		F88E2A6AB865C2A1EB845B27A14348FA /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Versions/A/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02D793DE5419137139F0A2C3780B4AA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCB630E5AABAE404DEC0AA7A5316EFAC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37FB0B23C359937B1D2F31897B700AAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				320144C1D79B1442E4702AE52BD04FBB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB8351B5579D6014A205A2D78DBCE0BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC4FAC089E727E071300DA1073666C8E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00B63D9B3EBC8ECAFD5DA8C24F1A42DF /* GooglePlaces */ = {
+			isa = PBXGroup;
+			children = (
+				475420FA59EFC8377CF994A338979247 /* Frameworks */,
+				4F6C8AC648A5703DF2BEC96A882D19E9 /* Resources */,
+			);
+			name = GooglePlaces;
+			path = GooglePlaces;
+			sourceTree = "<group>";
+		};
+		26C94CF6FBD559155351548F2127E7DB /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				B2F22323EA3B1ADB4F96376E3F709A68 /* Base */,
+				488E301C4ACDDA928635C4886F5F6158 /* Maps */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		385FA015FFB9210F372AB1078B856AAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26C94CF6FBD559155351548F2127E7DB /* GoogleMaps */,
+				00B63D9B3EBC8ECAFD5DA8C24F1A42DF /* GooglePlaces */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		475420FA59EFC8377CF994A338979247 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70324FDF1FBB41BEA92DE76E00BD3E96 /* GooglePlaces.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		488E301C4ACDDA928635C4886F5F6158 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				82CE66B3B7EC3F6274BF43A52FEEAE6E /* Frameworks */,
+				FAC5D957D919553947FEE0A96B739CC4 /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		4CFA8C2E94378AFFDBA3DF92FBE7E3DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B22C69ADCE7C9D529F11B17B4EF5E065 /* GoogleMapsBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F6C8AC648A5703DF2BEC96A882D19E9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F88E2A6AB865C2A1EB845B27A14348FA /* GooglePlaces.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				385FA015FFB9210F372AB1078B856AAB /* Pods */,
+				C5844D4CFBE70C842D7E7020F8E29C28 /* Products */,
+				AD2CDF24ECE5BE5F2B360F7A296CB947 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		80DD8E1C2939A7DEE2AAA5C530166A48 /* Pods-yuriUITests */ = {
+			isa = PBXGroup;
+			children = (
+				10171B513ED1B5AD3108F3B60189F851 /* Info.plist */,
+				62360904AAC80B8727AF4841876A5025 /* Pods-yuriUITests.modulemap */,
+				57D4F5C8EB1CF0FC671F83A81CFFCE0A /* Pods-yuriUITests-acknowledgements.markdown */,
+				96E1DA34B525C4873039B1EAD8091B23 /* Pods-yuriUITests-acknowledgements.plist */,
+				29A8AC7B70C3A233740F1D585F41E4AF /* Pods-yuriUITests-dummy.m */,
+				23E26FD15527BA14449E1BBAC47291A8 /* Pods-yuriUITests-frameworks.sh */,
+				D0F9D2F250B76840309D947E06652B41 /* Pods-yuriUITests-resources.sh */,
+				F5D26FD3A4F547B8BECC43C74D36BDA0 /* Pods-yuriUITests-umbrella.h */,
+				15352B0CD18A4A30D5DF2E53BBF29195 /* Pods-yuriUITests.debug.xcconfig */,
+				4E19C81355D034CB4257C9F2649AC366 /* Pods-yuriUITests.release.xcconfig */,
+			);
+			name = "Pods-yuriUITests";
+			path = "Target Support Files/Pods-yuriUITests";
+			sourceTree = "<group>";
+		};
+		82CE66B3B7EC3F6274BF43A52FEEAE6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08F1229163C7F5E61C7C4B361510F11C /* GoogleMaps.framework */,
+				A92DFDA40F47C0FD221B2872C31099A1 /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD2CDF24ECE5BE5F2B360F7A296CB947 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE23E00BF781D825A490841F1D8DE0A0 /* Pods-yuri */,
+				F4FE4F52AC02E14742D38D2F75EBABB3 /* Pods-yuriTests */,
+				80DD8E1C2939A7DEE2AAA5C530166A48 /* Pods-yuriUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B2F22323EA3B1ADB4F96376E3F709A68 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4CFA8C2E94378AFFDBA3DF92FBE7E3DC /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5844D4CFBE70C842D7E7020F8E29C28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2D601D3100627BC13481E031E0D59F1 /* Pods_yuri.framework */,
+				74A6A255393D8206D8AA000263C1BA52 /* Pods_yuriTests.framework */,
+				2D131E5C6DD06F562D539A83E3DEAF49 /* Pods_yuriUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		EE23E00BF781D825A490841F1D8DE0A0 /* Pods-yuri */ = {
+			isa = PBXGroup;
+			children = (
+				67F9F93FD1271FFB52B60130D3E1F5E1 /* Info.plist */,
+				B558D9F344F70899C603873F96825CDA /* Pods-yuri.modulemap */,
+				D96DB78B1F07E134DD417E373FBB6F8A /* Pods-yuri-acknowledgements.markdown */,
+				11CA587AA40D80DFE5D1F8F02EA8E046 /* Pods-yuri-acknowledgements.plist */,
+				6E556CA86187C08610E9B4ADD7A2D7BB /* Pods-yuri-dummy.m */,
+				1ABAB6B0FF4CF748335102A9174911BF /* Pods-yuri-frameworks.sh */,
+				F3152683484FC332925D3D8189E183FA /* Pods-yuri-resources.sh */,
+				75D2C3C0C87B77B9AF1F106301DDEE63 /* Pods-yuri-umbrella.h */,
+				E9B17CC60261BAAEFF35297E7985E237 /* Pods-yuri.debug.xcconfig */,
+				5D716922A0205D80D07FD888A64EB4FA /* Pods-yuri.release.xcconfig */,
+			);
+			name = "Pods-yuri";
+			path = "Target Support Files/Pods-yuri";
+			sourceTree = "<group>";
+		};
+		F4FE4F52AC02E14742D38D2F75EBABB3 /* Pods-yuriTests */ = {
+			isa = PBXGroup;
+			children = (
+				28A5BB949E9394120723A477B2E0D423 /* Info.plist */,
+				A23817746C0B413C61592FA806945799 /* Pods-yuriTests.modulemap */,
+				8EF4CB6DF7716A6DB21E1726EF76587B /* Pods-yuriTests-acknowledgements.markdown */,
+				58E71BF18EF41A061C6F7B41916066E8 /* Pods-yuriTests-acknowledgements.plist */,
+				EB8F2C50B72C6DC8CA9489EEDB888785 /* Pods-yuriTests-dummy.m */,
+				4164F076B3D92F212B81D6FAA2AAC3E3 /* Pods-yuriTests-frameworks.sh */,
+				3FD54A11E9BE275892565CB5DCE1C4E9 /* Pods-yuriTests-resources.sh */,
+				7E38ABE400A67F7C523A32FB311F3B0C /* Pods-yuriTests-umbrella.h */,
+				0C915ECECE427DE700BC05F531D9953B /* Pods-yuriTests.debug.xcconfig */,
+				9CA3267AE51CAEAB019C4F4BE0AAEEE2 /* Pods-yuriTests.release.xcconfig */,
+			);
+			name = "Pods-yuriTests";
+			path = "Target Support Files/Pods-yuriTests";
+			sourceTree = "<group>";
+		};
+		FAC5D957D919553947FEE0A96B739CC4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AFD4D1E144CCB4285706E577C2602A44 /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		001682BB62A040C8C9421AD5254D4179 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F9CE1E86D19BE17DC1DB5CA52ED8BD0 /* Pods-yuriTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74CCD526F1B873CADA3DAD6D7C3E0B18 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F322FFA46FB5D7C91B580BAE25BECA4 /* Pods-yuriUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DECFB135BA9ACED94A8E8490AA671FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E23FC7A6C971A81A17AE237C5C9281 /* Pods-yuri-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		437866BED02A9EB2975E687C1E53AB55 /* Pods-yuriTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86ACAB70BC7C176C09CEF6229A220FA0 /* Build configuration list for PBXNativeTarget "Pods-yuriTests" */;
+			buildPhases = (
+				6C824097D43B4CDB9470871796402D14 /* Sources */,
+				02D793DE5419137139F0A2C3780B4AA0 /* Frameworks */,
+				001682BB62A040C8C9421AD5254D4179 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-yuriTests";
+			productName = "Pods-yuriTests";
+			productReference = 74A6A255393D8206D8AA000263C1BA52 /* Pods_yuriTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		51C38A93C9C0167DC96E796DA4301012 /* Pods-yuriUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B2E1970A5BD24BE424E1B5D4291C1EB /* Build configuration list for PBXNativeTarget "Pods-yuriUITests" */;
+			buildPhases = (
+				65E2A0D6699240C6B8D69AC2303C3414 /* Sources */,
+				37FB0B23C359937B1D2F31897B700AAC /* Frameworks */,
+				74CCD526F1B873CADA3DAD6D7C3E0B18 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-yuriUITests";
+			productName = "Pods-yuriUITests";
+			productReference = 2D131E5C6DD06F562D539A83E3DEAF49 /* Pods_yuriUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		583CD223E0A84B1BA0B13F57DA580F90 /* Pods-yuri */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF19BD19255B28FB3F70F2385FBDC255 /* Build configuration list for PBXNativeTarget "Pods-yuri" */;
+			buildPhases = (
+				0ECD9311304AAE52A153457FFDE2DB11 /* Sources */,
+				BB8351B5579D6014A205A2D78DBCE0BA /* Frameworks */,
+				9DECFB135BA9ACED94A8E8490AA671FE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-yuri";
+			productName = "Pods-yuri";
+			productReference = B2D601D3100627BC13481E031E0D59F1 /* Pods_yuri.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = C5844D4CFBE70C842D7E7020F8E29C28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				583CD223E0A84B1BA0B13F57DA580F90 /* Pods-yuri */,
+				437866BED02A9EB2975E687C1E53AB55 /* Pods-yuriTests */,
+				51C38A93C9C0167DC96E796DA4301012 /* Pods-yuriUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0ECD9311304AAE52A153457FFDE2DB11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2DB7F1BF0CF813EAE911B0111497ACB /* Pods-yuri-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65E2A0D6699240C6B8D69AC2303C3414 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65C3FBFF59B2130D4F5AF832FAC3DCD2 /* Pods-yuriUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C824097D43B4CDB9470871796402D14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				058E1BC6FD54689067D18304BF034818 /* Pods-yuriTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		166E2CAC58E8608AD59A6F0B71C9C3E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1F5E958F2ACD161F1B0674852121D4D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E19C81355D034CB4257C9F2649AC366 /* Pods-yuriUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-yuriUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-yuriUITests/Pods-yuriUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_yuriUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		240FE9BE5A22A14061F0990E71DD1543 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D716922A0205D80D07FD888A64EB4FA /* Pods-yuri.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-yuri/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-yuri/Pods-yuri.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_yuri;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3639AA5805691EE92A7707371A04078C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9B17CC60261BAAEFF35297E7985E237 /* Pods-yuri.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-yuri/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-yuri/Pods-yuri.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_yuri;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AA0B5BDEB018901CD8F88AAD05F5B893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B104A479FD8B26DF728FABFEF2054C2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15352B0CD18A4A30D5DF2E53BBF29195 /* Pods-yuriUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-yuriUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-yuriUITests/Pods-yuriUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_yuriUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DE9274CB8A268C44FCE66D4083591BEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C915ECECE427DE700BC05F531D9953B /* Pods-yuriTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-yuriTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-yuriTests/Pods-yuriTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_yuriTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FD4ACD3BA32A1031089C54F093E23CC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CA3267AE51CAEAB019C4F4BE0AAEEE2 /* Pods-yuriTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-yuriTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-yuriTests/Pods-yuriTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_yuriTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				166E2CAC58E8608AD59A6F0B71C9C3E0 /* Debug */,
+				AA0B5BDEB018901CD8F88AAD05F5B893 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B2E1970A5BD24BE424E1B5D4291C1EB /* Build configuration list for PBXNativeTarget "Pods-yuriUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B104A479FD8B26DF728FABFEF2054C2A /* Debug */,
+				1F5E958F2ACD161F1B0674852121D4D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86ACAB70BC7C176C09CEF6229A220FA0 /* Build configuration list for PBXNativeTarget "Pods-yuriTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE9274CB8A268C44FCE66D4083591BEE /* Debug */,
+				FD4ACD3BA32A1031089C54F093E23CC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF19BD19255B28FB3F70F2385FBDC255 /* Build configuration list for PBXNativeTarget "Pods-yuri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3639AA5805691EE92A7707371A04078C /* Debug */,
+				240FE9BE5A22A14061F0990E71DD1543 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_yuri {
+  umbrella header "Pods-yuri-umbrella.h"
+
+  export *
+  module * { export * }
+}
