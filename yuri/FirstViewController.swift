@@ -11,7 +11,7 @@ import GoogleMaps
 import GooglePlaces
 import Foundation
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, GMSMapViewDelegate {
     
     
     var locationManager = CLLocationManager()
@@ -59,10 +59,12 @@ class FirstViewController: UIViewController {
         print(lat ?? "no lat")
         let lng = locationManager.location?.coordinate.longitude
         print(lng ?? "no lng")
-        //let dtime = locationManager.location?.timestamp
+        //let time = locationManager.location?.timestamp
+        
+        //let checkinID:String = lat! + lng! + time
         
         
-        let post = (baseURL + "?lng="+(lng?.description)!+"&lat="+(lat?.description)!+"&id=12&checkinID=120")
+        let post = (baseURL + "?lng="+(lng?.description)!+"&lat="+(lat?.description)!+"&id=12&checkinID=120&colorCode=3")
         print(post)
         let postURL = URL(string: post)
         
@@ -102,6 +104,7 @@ class FirstViewController: UIViewController {
         mapView.isMyLocationEnabled = true
         let mapInsets = UIEdgeInsets(top: 0, left: 0, bottom: 100, right: 0)
         mapView.padding = mapInsets
+        mapView.setMinZoom(10, maxZoom: 20)
         
         
         
@@ -112,10 +115,43 @@ class FirstViewController: UIViewController {
         view.addSubview(mapView)
         mapView.isHidden = true
         
+        mapView.delegate = self
         
-        let urlString = "http://dev.4tay.xyz:8080/yuri/api/location?range=.01&lng=-78.650543&lat=35.780899"
+    }
+    func mapView(_ mapViewIdle: GMSMapView, idleAt position: GMSCameraPosition) {
+        
+        let latCenter = position.target.latitude
+        let lngCenter = position.target.longitude
+        let latNorthEast = mapView.cameraTargetBounds?.northEast.latitude.description
+        let lngNorthEast = mapView.cameraTargetBounds?.northEast.longitude.description
+        
+        let bigLatNorthEast = mapView.cameraTargetBounds?.northEast.latitude
+        
+        
+        print(bigLatNorthEast ?? "no latNorthEast", lngNorthEast ?? "no lngNorthEast")
+        //let lat = Float(latCenter) - latNorthEast
+        //let lng = Float(lngCenter) - lngNorthEast
+        
+        //var range: Float = 0
+        //if(abs(lat) > abs(lng)) {
+        //    range = abs(Float(lat))
+        //} else {
+        //    range = abs(Float(lng))
+        //}
+        //print("lng: \(Float(position.target.longitude)) lat: \(Float(position.target.latitude)) range: \(range)")
+        
+        movedMapGetLocals(lng: Float(position.target.longitude), lat: Float(position.target.latitude), range: 0.02)
+    }
+    
+    func movedMapGetLocals(lng: Float, lat: Float, range: Float) {
+        
+        //let topLeft = ["lat": mapView.cameraTargetBounds?.northEast.latitude, "lng": mapView.cameraTargetBounds?.northEast.longitude]
+        //let bottomRight = ["lat": mapView.cameraTargetBounds?.southWest.latitude, "lng": mapView.cameraTargetBounds?.southWest.longitude]
+        
+        let urlString = "\(baseURL)?range=\(range)&lng=\(lng)&lat=\(lat)"
         
         let url = URL(string: urlString)
+        mapView.clear()
         URLSession.shared.dataTask(with:url!) { (data, response, error) in
             if error != nil {
                 print(error ?? "random other error....")
@@ -137,6 +173,9 @@ class FirstViewController: UIViewController {
                             if let id = location["checkinID"] as? Int {
                                 locationDict["checkinID"] = id
                             }
+                            if let colorCode = location["colorCode"] as? Int {
+                                locationDict["colorCode"] = colorCode
+                            }
                             
                             locationArray.append(locationDict)
                         }
@@ -148,6 +187,7 @@ class FirstViewController: UIViewController {
             }
             
             }.resume()
+        
     }
     
     func updateMapWithLocations(array: [[String: Any]]) {
@@ -157,11 +197,33 @@ class FirstViewController: UIViewController {
                 if let lat = local["lat"] as? Float{
                     let lng = local["lng"] as? Float ?? 12.00
                     let id = local["checkinID"] as? Int ?? 101101
-                    print("checkinID:", id, "lat:", lat, "lng:", lng)
+                    let colorCode = local["colorCode"] as? Int ?? 101101
+                    print("checkinID:", id, "lat:", lat, "lng:", lng, "colorCode:", colorCode)
                     
                     //Have to call this on the main thread....
                     let positions = CLLocationCoordinate2D(latitude: CLLocationDegrees(lat), longitude: CLLocationDegrees(lng))
-                    let marker = GMSMarker(position: positions)
+                    //let marker = GMSCircle(position: positions)
+                    let marker = GMSCircle(position: positions, radius: 20)
+                    
+                    switch colorCode{
+                    case 0:
+                        print("colorCode was a", colorCode)
+                        marker.fillColor = UIColor.green
+                        marker.strokeColor = UIColor.green
+                    case 1:
+                        print("colorCode was a", colorCode)
+                        marker.fillColor = UIColor.green
+                        marker.strokeColor = UIColor.green
+                    case 2:
+                        print("colorCode was a", colorCode)
+                        marker.fillColor = UIColor.blue
+                        marker.strokeColor = UIColor.blue
+                    default:
+                        print("colorCode was a", colorCode)
+                        marker.fillColor = UIColor.red
+                        marker.strokeColor = UIColor.red
+                    }
+                    
                     marker.map = self.mapView
                     
                 }
@@ -181,6 +243,7 @@ class FirstViewController: UIViewController {
         return locationButton
         
     }
+    
 }
 
 // Delegates to handle events for the location manager.
@@ -201,8 +264,8 @@ extension FirstViewController: CLLocationManagerDelegate {
         } else {
             mapView.animate(to: camera)
         }
+        movedMapGetLocals(lng: Float(location.coordinate.longitude),lat: Float(location.coordinate.latitude),range: camera.zoom)
         
-        //listLikelyPlaces()
     }
     
     // Handle authorization for the location manager.
@@ -227,4 +290,6 @@ extension FirstViewController: CLLocationManagerDelegate {
         locationManager.stopUpdatingLocation()
         print("Error: \(error)")
     }
+    
+    
 }
