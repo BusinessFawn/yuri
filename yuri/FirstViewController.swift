@@ -117,30 +117,33 @@ class FirstViewController: UIViewController, GMSMapViewDelegate {
         
         mapView.delegate = self
         
+        
     }
     func mapView(_ mapViewIdle: GMSMapView, idleAt position: GMSCameraPosition) {
         
-        let latCenter = position.target.latitude
-        let lngCenter = position.target.longitude
-        let latNorthEast = mapView.cameraTargetBounds?.northEast.latitude.description
-        let lngNorthEast = mapView.cameraTargetBounds?.northEast.longitude.description
+        let latCenter = mapView.camera.target.latitude
+        let lngCenter = mapView.camera.target.longitude
+
+        let visableRegion: GMSVisibleRegion = mapView.projection.visibleRegion()
+        let bounds = GMSCoordinateBounds(coordinate: visableRegion.nearLeft, coordinate: visableRegion.farRight)
+        let latNorthEast = bounds.northEast.latitude
+        let lngNorthEast = bounds.northEast.longitude
         
-        let bigLatNorthEast = mapView.cameraTargetBounds?.northEast.latitude
         
         
-        print(bigLatNorthEast ?? "no latNorthEast", lngNorthEast ?? "no lngNorthEast")
-        //let lat = Float(latCenter) - latNorthEast
-        //let lng = Float(lngCenter) - lngNorthEast
+        print(latNorthEast , lngNorthEast )
+        let lat = Float(latCenter) - Float(latNorthEast)
+        let lng = Float(lngCenter) - Float(lngNorthEast)
         
-        //var range: Float = 0
-        //if(abs(lat) > abs(lng)) {
-        //    range = abs(Float(lat))
-        //} else {
-        //    range = abs(Float(lng))
-        //}
-        //print("lng: \(Float(position.target.longitude)) lat: \(Float(position.target.latitude)) range: \(range)")
+        var range: Float = 0
+        if(abs(lat) > abs(lng)) {
+            range = abs(Float(lat))
+        } else {
+            range = abs(Float(lng))
+        }
+        print("lng: \(Float(position.target.longitude)) lat: \(Float(position.target.latitude)) range: \(range)")
         
-        movedMapGetLocals(lng: Float(position.target.longitude), lat: Float(position.target.latitude), range: 0.02)
+        movedMapGetLocals(lng: Float(lngCenter), lat: Float(latCenter), range: range)
     }
     
     func movedMapGetLocals(lng: Float, lat: Float, range: Float) {
@@ -149,6 +152,8 @@ class FirstViewController: UIViewController, GMSMapViewDelegate {
         //let bottomRight = ["lat": mapView.cameraTargetBounds?.southWest.latitude, "lng": mapView.cameraTargetBounds?.southWest.longitude]
         
         let urlString = "\(baseURL)?range=\(range)&lng=\(lng)&lat=\(lat)"
+        
+        print("here is my whole thing!", urlString)
         
         let url = URL(string: urlString)
         mapView.clear()
@@ -176,6 +181,9 @@ class FirstViewController: UIViewController, GMSMapViewDelegate {
                             if let colorCode = location["colorCode"] as? Int {
                                 locationDict["colorCode"] = colorCode
                             }
+                            if let hashTag = location["hash"] as? String {
+                                locationDict["hash"] = hashTag
+                            }
                             
                             locationArray.append(locationDict)
                         }
@@ -198,7 +206,8 @@ class FirstViewController: UIViewController, GMSMapViewDelegate {
                     let lng = local["lng"] as? Float ?? 12.00
                     let id = local["checkinID"] as? Int ?? 101101
                     let colorCode = local["colorCode"] as? Int ?? 101101
-                    print("checkinID:", id, "lat:", lat, "lng:", lng, "colorCode:", colorCode)
+                    let hashTag = local["hash"] as? String ?? "noHash"
+                    print("checkinID:", id, "lat:", lat, "lng:", lng, "colorCode:", colorCode, "hash:", hashTag)
                     
                     //Have to call this on the main thread....
                     let positions = CLLocationCoordinate2D(latitude: CLLocationDegrees(lat), longitude: CLLocationDegrees(lng))
@@ -257,14 +266,37 @@ extension FirstViewController: CLLocationManagerDelegate {
         let camera = GMSCameraPosition.camera(withLatitude: location.coordinate.latitude,
                                               longitude: location.coordinate.longitude,
                                               zoom: zoomLevel)
-        
+
         if mapView.isHidden {
             mapView.isHidden = false
             mapView.camera = camera
         } else {
             mapView.animate(to: camera)
         }
-        movedMapGetLocals(lng: Float(location.coordinate.longitude),lat: Float(location.coordinate.latitude),range: camera.zoom)
+        
+        let latCenter = camera.target.latitude
+        let lngCenter = camera.target.longitude
+        
+        
+        let visableRegion: GMSVisibleRegion = mapView.projection.visibleRegion()
+        let bounds = GMSCoordinateBounds(coordinate: visableRegion.nearLeft, coordinate: visableRegion.farRight)
+        let latNorthEast = bounds.northEast.latitude
+        let lngNorthEast = bounds.northEast.longitude
+        
+        
+        
+        print(latNorthEast , lngNorthEast )
+        let lat = Float(latCenter) - Float(latNorthEast)
+        let lng = Float(lngCenter) - Float(lngNorthEast)
+        
+        var range: Float = 0
+        if(abs(lat) > abs(lng)) {
+            range = abs(Float(lat))
+        } else {
+            range = abs(Float(lng))
+        }
+        movedMapGetLocals(lng: Float(location.coordinate.longitude),lat: Float(location.coordinate.latitude),range: range)
+    
         
     }
     
