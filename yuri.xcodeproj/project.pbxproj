@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF682FEA1EDF983B00C590A0 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF682FE91EDF983B00C590A0 /* BottomSheetViewController.swift */; };
+		BF682FEC1EDF98B500C590A0 /* ScrollableBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF682FEB1EDF98B500C590A0 /* ScrollableBottomSheetViewController.swift */; };
+		BF682FEE1EDFA22F00C590A0 /* BottomSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF682FED1EDFA22F00C590A0 /* BottomSheetViewController.xib */; };
+		BF682FF01EDFA25F00C590A0 /* DefaultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF682FEF1EDFA25F00C590A0 /* DefaultTableViewCell.swift */; };
+		BF682FF21EDFA28F00C590A0 /* ScrollableBottomSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF682FF11EDFA28F00C590A0 /* ScrollableBottomSheetViewController.xib */; };
+		BF682FF41EDFA29900C590A0 /* DefaultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF682FF31EDFA29900C590A0 /* DefaultTableViewCell.xib */; };
 		BFF704741ED0DDCA00E1BAF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF704731ED0DDCA00E1BAF3 /* AppDelegate.swift */; };
 		BFF704761ED0DDCA00E1BAF3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF704751ED0DDCA00E1BAF3 /* FirstViewController.swift */; };
 		BFF704781ED0DDCA00E1BAF3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF704771ED0DDCA00E1BAF3 /* SecondViewController.swift */; };
@@ -41,6 +47,12 @@
 		4BDBD1FD17D89A2FED7112D2 /* Pods-yuriTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yuriTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yuriTests/Pods-yuriTests.debug.xcconfig"; sourceTree = "<group>"; };
 		76330B9E8FB71FFB10363D2D /* Pods-yuriUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yuriUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yuriUITests/Pods-yuriUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A92BB4B8FE84D77F1B46DDFA /* Pods-yuriUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yuriUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-yuriUITests/Pods-yuriUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BF682FE91EDF983B00C590A0 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
+		BF682FEB1EDF98B500C590A0 /* ScrollableBottomSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableBottomSheetViewController.swift; sourceTree = "<group>"; };
+		BF682FED1EDFA22F00C590A0 /* BottomSheetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BottomSheetViewController.xib; sourceTree = "<group>"; };
+		BF682FEF1EDFA25F00C590A0 /* DefaultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTableViewCell.swift; sourceTree = "<group>"; };
+		BF682FF11EDFA28F00C590A0 /* ScrollableBottomSheetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScrollableBottomSheetViewController.xib; sourceTree = "<group>"; };
+		BF682FF31EDFA29900C590A0 /* DefaultTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DefaultTableViewCell.xib; sourceTree = "<group>"; };
 		BFF704701ED0DDCA00E1BAF3 /* yuri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yuri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFF704731ED0DDCA00E1BAF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFF704751ED0DDCA00E1BAF3 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +146,12 @@
 				BFF7047C1ED0DDCA00E1BAF3 /* Assets.xcassets */,
 				BFF7047E1ED0DDCA00E1BAF3 /* LaunchScreen.storyboard */,
 				BFF704811ED0DDCA00E1BAF3 /* Info.plist */,
+				BF682FE91EDF983B00C590A0 /* BottomSheetViewController.swift */,
+				BF682FED1EDFA22F00C590A0 /* BottomSheetViewController.xib */,
+				BF682FEF1EDFA25F00C590A0 /* DefaultTableViewCell.swift */,
+				BF682FF31EDFA29900C590A0 /* DefaultTableViewCell.xib */,
+				BF682FEB1EDF98B500C590A0 /* ScrollableBottomSheetViewController.swift */,
+				BF682FF11EDFA28F00C590A0 /* ScrollableBottomSheetViewController.xib */,
 			);
 			path = yuri;
 			sourceTree = "<group>";
@@ -274,8 +292,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFF704801ED0DDCA00E1BAF3 /* LaunchScreen.storyboard in Resources */,
+				BF682FF21EDFA28F00C590A0 /* ScrollableBottomSheetViewController.xib in Resources */,
 				BFF7047D1ED0DDCA00E1BAF3 /* Assets.xcassets in Resources */,
+				BF682FF41EDFA29900C590A0 /* DefaultTableViewCell.xib in Resources */,
 				BFF7047B1ED0DDCA00E1BAF3 /* Main.storyboard in Resources */,
+				BF682FEE1EDFA22F00C590A0 /* BottomSheetViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,9 +459,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF682FEC1EDF98B500C590A0 /* ScrollableBottomSheetViewController.swift in Sources */,
+				BF682FF01EDFA25F00C590A0 /* DefaultTableViewCell.swift in Sources */,
 				BFF704781ED0DDCA00E1BAF3 /* SecondViewController.swift in Sources */,
 				BFF704741ED0DDCA00E1BAF3 /* AppDelegate.swift in Sources */,
 				BFF704761ED0DDCA00E1BAF3 /* FirstViewController.swift in Sources */,
+				BF682FEA1EDF983B00C590A0 /* BottomSheetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

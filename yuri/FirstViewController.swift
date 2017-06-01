@@ -79,6 +79,10 @@ class FirstViewController: UIViewController, GMSMapViewDelegate {
         }.resume()
         
     }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        addBottomSheetView()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -102,7 +106,7 @@ class FirstViewController: UIViewController, GMSMapViewDelegate {
         mapView.settings.myLocationButton = true
         mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         mapView.isMyLocationEnabled = true
-        let mapInsets = UIEdgeInsets(top: 0, left: 0, bottom: 100, right: 0)
+        let mapInsets = UIEdgeInsets(top: 0, left: 0, bottom: 170, right: 0)
         mapView.padding = mapInsets
         mapView.setMinZoom(10, maxZoom: 20)
         
@@ -242,7 +246,7 @@ class FirstViewController: UIViewController, GMSMapViewDelegate {
     
     func makeSendLocation(text:String) -> UIButton {
         let locationButton = UIButton(type: UIButtonType.system)
-        locationButton.frame = CGRect(x: view.frame.size.width-(locationButton.frame.size.width+60), y: view.frame.size.height-(locationButton.frame.size.height+100), width: 45, height: 45)
+        locationButton.frame = CGRect(x: view.frame.size.width-(locationButton.frame.size.width+60), y: view.frame.size.height-(locationButton.frame.size.height+170), width: 45, height: 45)
         locationButton.backgroundColor = UIColor.blue
         locationButton.setTitle(text, for: .normal)
         locationButton.setTitleColor(UIColor.white, for: .normal)
@@ -252,6 +256,26 @@ class FirstViewController: UIViewController, GMSMapViewDelegate {
         return locationButton
         
     }
+    func mapView(_ mapView: GMSMapView, didTap overlay: GMSOverlay) {
+        print("this....")
+    }
+    
+    func addBottomSheetView(scrollable: Bool? = true) {
+        let bottomSheetVC = scrollable! ? BottomSheetViewController() : ScrollableBottomSheetViewController()
+        
+        
+        self.addChildViewController(bottomSheetVC)
+        self.view.addSubview(bottomSheetVC.view)
+        bottomSheetVC.didMove(toParentViewController: self)
+        
+        let height = view.frame.height
+        let width  = view.frame.width
+        bottomSheetVC.view.frame = CGRect(x: 0, y: self.view.frame.maxY, width: width, height: height)
+        
+        self.view.bringSubview(toFront: bottomSheetVC.view)
+        
+    }
+
     
 }
 
@@ -322,6 +346,12 @@ extension FirstViewController: CLLocationManagerDelegate {
         locationManager.stopUpdatingLocation()
         print("Error: \(error)")
     }
+    func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
+        print("thisssssss")
+        
+        return true
+    }
+    
     
     
 }
